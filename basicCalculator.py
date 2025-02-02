@@ -1,22 +1,24 @@
-def divisionRepete(numberOne, numberTwo):
-    numberTwo = int(input('Type another number, for the divider\n'))
-    print(numberOne / numberTwo)
+def repetidorDeDivisao(numeroUm, numeroDois):
+    numeroDois = int(input('Digite outro numero para dividir\n'))
+    print(numeroUm / numeroDois)
 
-numberOne = int(input('Type a number\n'))
-numberTwo = int(input('Type another number\n'))
+numeroUm = int(input('Digite um numero\n'))
+numeroDois = int(input('Digite outro numero\n'))
 
-operation = input('What basic mathematical operation do you want to do ?\n')
+operacao = input('Que operacao matematica deseja fazer ?\n')
 
-if operation == '*':
-    print(numberOne * numberTwo)
-elif operation == '/':
-    if numberTwo == 0:
-        print("There isn't division by 0")
-        divisionRepete(numberOne, numberTwo)
+if operacao == '*':
+    print(numeroUm * numeroDois)
+elif operacao == '/':
+    if numeroDois == 0:
+        print("Nao pode dividir por zero!")
+        repetidorDeDivisao(numeroUm, numeroDois)
     else:
-        print(numberOne / numberTwo) 
-elif operation == '+':
-    print(numberOne + numberTwo) 
+        print(numeroUm / numeroDois) 
+elif operacao == '+':
+    print(numeroUm + numeroDois) 
 else:
-    print(numberOne - numberTwo)
+    print(numeroUm - numeroDois)
+
+print("Obrigado por usar o codigo :D")
     
